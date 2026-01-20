@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Big Screen Media Hub</string>
+
+    <string name="title_epg">EPG</string>
+    <string name="title_vod">VOD</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_search">Search</string>
+    <string name="title_player">Player</string>
+
+    <string name="hint_search">Search EPG, VOD, Favorites</string>
+    <string name="menu_hint">Tip: Use D-pad to navigate. Press OK/Enter on Search.</string>
+
+    <string name="action_play">Play</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="action_open">Open</string>
+    <string name="action_remove">Remove</string>
+
+    <string name="vod_hint">Browse dummy VOD catalog. Select a card, then Play.</string>
+    <string name="favorites_empty">No favorites yet. Add from EPG or VOD.</string>
+
+    <string name="search_results_for_default">Search results</string>
+    <string name="search_results_for">Results for “%1$s”</string>
+    <string name="search_section_epg">EPG</string>
+    <string name="search_section_vod">VOD</string>
+    <string name="search_section_favorites">Favorites</string>
+    <string name="search_no_results">No results. Try another query.</string>
+</resources>

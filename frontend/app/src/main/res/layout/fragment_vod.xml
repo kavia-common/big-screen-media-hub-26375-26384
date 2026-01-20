@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vodRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp">
+
+    <TextView
+        android:id="@+id/vodHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vod_hint"
+        android:textColor="@color/ocean_text_muted"
+        android:textSize="18sp" />
+
+    <RecyclerView
+        android:id="@+id/vodGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+</LinearLayout>

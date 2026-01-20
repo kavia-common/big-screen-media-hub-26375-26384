@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/playerRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ocean_bg"
+    android:orientation="vertical"
+    android:paddingLeft="48dp"
+    android:paddingTop="32dp"
+    android:paddingRight="48dp"
+    android:paddingBottom="32dp">
+
+    <TextView
+        android:id="@+id/playerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_player"
+        android:textColor="@color/ocean_text"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        app:show_buffering="when_playing"
+        app:use_controller="true" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/favRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp">
+
+    <RecyclerView
+        android:id="@+id/favoritesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/emptyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/favorites_empty"
+        android:textColor="@color/ocean_text_muted"
+        android:textSize="22sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" />
+</FrameLayout>

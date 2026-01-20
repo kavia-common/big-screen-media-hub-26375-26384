@@ -1,0 +1,53 @@
+<resources>
+
+    <style name="Theme.OceanProfessional" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:colorBackground">@color/ocean_bg</item>
+        <item name="android:textColorPrimary">@color/ocean_text</item>
+        <item name="android:textColorSecondary">@color/ocean_text_muted</item>
+        <item name="android:windowBackground">@color/ocean_bg</item>
+    </style>
+
+    <!-- Base namespace style (used as a parent by other Widget.Ocean.* styles) -->
+    <style name="Widget.Ocean" parent="@android:style/Widget" />
+
+    <style name="Widget.Ocean.MenuItem" parent="@style/Widget.Ocean">
+        <item name="android:background">@drawable/bg_menu_item</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/ocean_text</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="Widget.Ocean.ListItem">
+        <item name="android:background">@drawable/bg_list_item</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/ocean_text</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="Widget.Ocean.ActionButton">
+        <item name="android:background">@drawable/bg_action_primary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/ocean_text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="Widget.Ocean.ActionButtonSecondary">
+        <item name="android:background">@drawable/bg_action_secondary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/ocean_text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+</resources>

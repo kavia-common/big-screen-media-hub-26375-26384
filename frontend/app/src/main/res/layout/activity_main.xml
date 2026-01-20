@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ocean_bg"
+    android:orientation="vertical"
+    android:paddingLeft="48dp"
+    android:paddingTop="32dp"
+    android:paddingRight="48dp"
+    android:paddingBottom="32dp"
+    tools:context=".MainActivity">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@drawable/bg_top_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/topTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/title_epg"
+            android:textColor="@color/ocean_text"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/searchInput"
+            android:layout_width="360dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_search"
+            android:hint="@string/hint_search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/ocean_text"
+            android:textColorHint="@color/ocean_text_muted"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+    </LinearLayout>
+
+    <!-- Body -->
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="18dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- Side Menu -->
+        <LinearLayout
+            android:id="@+id/sideMenu"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_panel"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/menuEpg"
+                style="@style/Widget.Ocean.MenuItem"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="@string/title_epg" />
+
+            <TextView
+                android:id="@+id/menuVod"
+                style="@style/Widget.Ocean.MenuItem"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/title_vod" />
+
+            <TextView
+                android:id="@+id/menuFavorites"
+                style="@style/Widget.Ocean.MenuItem"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/title_favorites" />
+
+            <TextView
+                android:id="@+id/menuHelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="@string/menu_hint"
+                android:textColor="@color/ocean_text_muted"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <!-- Content -->
+        <FrameLayout
+            android:id="@+id/contentContainer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_panel" />
+
+    </LinearLayout>
+
+</LinearLayout>

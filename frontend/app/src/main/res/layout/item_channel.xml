@@ -1,0 +1,7 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/channelTitle"
+    style="@style/Widget.Ocean.ListItem"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:layout_marginBottom="10dp"
+    android:text="101  Ocean News" />

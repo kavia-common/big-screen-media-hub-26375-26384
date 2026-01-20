@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searchRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp">
+
+    <TextView
+        android:id="@+id/queryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_results_for_default"
+        android:textColor="@color/ocean_text"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <RecyclerView
+        android:id="@+id/resultsList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+</LinearLayout>
